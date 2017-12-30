@@ -1,3 +1,12 @@
+/**
+ * Laravel ajax forms 
+ * @version 1.0.0
+ * @author Mahmoud Sabry - 2018
+ * @authorEmail mhsabry@yahoo.com
+ * @license The MIT License (MIT)
+ * @todo Ajax form in laravel
+ * @todo Displying error/success validation messages
+ */
 (function ($) {
     $.fn.mslaf = function (options) {
         var selector = this;
