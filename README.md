@@ -1,17 +1,17 @@
 # Laravel Ajax forms
-Easy way to use traditional form to Ajax and manage alerts/messages
+Easy way to send traditional form inputs through Ajax and manage alerts/messages which laravel validator generated 
 ## Installing
 * Installing using bower
 ```
 bower install  mahmoudsabry/mslaf
 ```
 
-* [Download](https://www.yahoo.com) - The web
+* [Download](https://www.yahoo.com)
 
 ## How to use
 HTML form
 ``` html
-<form id="ajaxForm" method="post" action="{{url('store')}}">
+<form id="ajaxForm" action="{{url('store')}}">
 {{ csrf_field() }}
 Name : 
 <input type="text" id="name">
@@ -37,7 +37,6 @@ Radio
 <input type="radio" name="radio" value="1">
 <input type="radio" name="radio" value="2">
 <input type="radio" name="radio" value="3">
-<!--<input type="submit" value="Submit" />-->
 <br />
 select : 
 <select name="select" multiple="multiple">
@@ -45,11 +44,12 @@ select :
     <option>2</option>
     <option>3</option>
 </select>
-<input id="tt" type="submit" value="Submit" />
+<input type="submit" value="Submit" />
 </form>
 ```
 js
 ```javascript
 $('#ajaxForm').mslaf();
 ```
+
 
