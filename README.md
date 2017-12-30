@@ -74,7 +74,7 @@ $('#ajaxForm').mslaf({errorInputClass: 'alert alert-danger'}); // for input fiel
 ```
 by default success message is "Successfully done" choose your success message
 ```javascript
-$('#ajaxForm').mslaf({successMessge: 'Done'}); // for input fields
+$('#ajaxForm').mslaf({successMessge: 'Done'});
 ```
 adding success class
 ```javascript
@@ -84,4 +84,23 @@ For sending extra hidden post fields :
 ```javascript
 $('#ajaxForm').mslaf({hidden: {var1: 'testing', var2:'also testing'}}); 
 ```
+Overriding on ajax call done
+```javascript
+$('#ajaxForm').mslaf({onDone: function(){alert('done')}}); 
+$('#ajaxForm').mslaf({onDone: function(data){console.log(data)}}); // Handle laravel response 
+```
+Overriding on ajax call failed
+```javascript
+$('#ajaxForm').mslaf({onFail: function(){alert('fail')}}); 
+$('#ajaxForm').mslaf({onFail: function(data){console.log(data)}}); // Handle laravel response for all errors
+```
+Overriding on form submitted
+```javascript
+$('#ajaxForm').mslaf({onSubmit: function(){alert('submit')}}); 
+```
+Overriding on form callback
+```javascript
+$('#ajaxForm').mslaf({callback: function(){alert('callback')}}); 
+```
+
  
