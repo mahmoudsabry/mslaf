@@ -1,0 +1,21 @@
+{
+  "name": "mslaf",
+  "homepage": "https://github.com/mahmoudsabry/mslaf",
+  "authors": [
+    "Mahmoud Sabry <mhsabry@yahoo.com>"
+  ],
+  "description": "Easy way to use traditional form to Ajax and manage alerts/messages",
+  "main": "dist/mslaf.min.js",
+  "keywords": [
+    "Laravel",
+    "Forms",
+    "Ajax",
+    "Form",
+    "messages",
+    "Form",
+    "Notifications",
+    "Ajax",
+    "call"
+  ],
+  "license": "MIT"
+}
