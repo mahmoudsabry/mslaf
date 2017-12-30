@@ -6,8 +6,6 @@ Easy way to send traditional form inputs through Ajax and manage alerts/messages
 bower install  mahmoudsabry/mslaf
 ```
 
-* [Download](https://www.yahoo.com)
-
 ## How to use
 HTML form
 ``` html
@@ -51,5 +49,39 @@ js
 ```javascript
 $('#ajaxForm').mslaf();
 ```
+By default the url to handle form inputs taken from tag action="..." you can override the url :
 
+```javascript
+$('#ajaxForm').mslaf({url: 'http://www.siteurl.com/handle'});
 
+```
+By default the form method is POST you can override it :
+```javascript
+$('#ajaxForm').mslaf({method: 'GET'});
+
+```
+By default the error messages generated next to its input field, you can override it and make the error messages display in one span or taget DOM Object :
+```javascript
+$('#ajaxForm').mslaf({singleAlert: true}); // auto generated span
+$('#ajaxForm').mslaf({singleAlert: true, mainAlertDiv: $('#errors')}); // all errors will displayed in a DOM Object its id = errors
+```
+adding class for all errors :
+```javascript
+$('#ajaxForm').mslaf({errorDivClass: 'alert alert-danger'}); // for error message
+```
+```javascript
+$('#ajaxForm').mslaf({errorInputClass: 'alert alert-danger'}); // for input fields
+```
+by default success message is "Successfully done" choose your success message
+```javascript
+$('#ajaxForm').mslaf({successMessge: 'Done'}); // for input fields
+```
+adding success class
+```javascript
+$('#ajaxForm').mslaf({successClass: 'alert alert-success'});
+```
+For sending extra hidden post fields :
+```javascript
+$('#ajaxForm').mslaf({hidden: {var1: 'testing', var2:'also testing'}}); 
+```
+ 
