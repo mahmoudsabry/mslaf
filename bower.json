@@ -4,7 +4,7 @@
   "authors": [
     "Mahmoud Sabry <mhsabry@yahoo.com>"
   ],
-  "description": "Easy way to use traditional form to Ajax and manage alerts/messages",
+  "description": "Easy way to send traditional form inputs through Ajax and manage alerts/messages which laravel validator generated",
   "main": "dist/mslaf.min.js",
   "keywords": [
     "Laravel",
@@ -12,10 +12,12 @@
     "Ajax",
     "Form",
     "messages",
-    "Form",
     "Notifications",
-    "Ajax",
     "call"
   ],
+  "ignore": [],
+  "dependencies": {
+    "jquery": ">= 1.12.4"
+  },
   "license": "MIT"
 }
