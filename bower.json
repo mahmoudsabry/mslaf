@@ -4,7 +4,7 @@
   "authors": [
     "Mahmoud Sabry <mhsabry@yahoo.com>"
   ],
-  "description": "Easy way to send traditional form inputs through Ajax and manage alerts/messages which laravel validator generated",
+  "description": "Easy way to send traditional form inputs through Ajax and handling  alerts/messages which generated from laravel validator",
   "main": "dist/mslaf.js",
   "keywords": [
     "Laravel",

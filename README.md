@@ -1,7 +1,6 @@
 # Laravel Ajax forms
-Easy way to send traditional form inputs through Ajax and manage alerts/messages which laravel validator generated 
+Easy way to send traditional form inputs through Ajax and handling  alerts/messages which generated from laravel validator
 ## Installing
-* Installing using bower
 ```
 bower install  mahmoudsabry/mslaf
 ```
@@ -45,11 +44,11 @@ select :
 <input type="submit" value="Submit" />
 </form>
 ```
-js
+JavaScript
 ```javascript
 $('#ajaxForm').mslaf();
 ```
-By default the url to handle form inputs taken from tag action="..." you can override the url :
+By default ajax call url get from the form attribute action value, by setting url option it will override the action attribute
 
 ```javascript
 $('#ajaxForm').mslaf({url: 'http://www.siteurl.com/handle'});
