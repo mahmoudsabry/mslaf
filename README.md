@@ -6,7 +6,12 @@ bower install  mahmoudsabry/mslaf
 ```
 
 ## How to use
-HTML form
+* Laravel controller or Form request return getMessages()
+```php
+return $validator->errors()->getMessages();
+```
+
+* HTML form
 ``` html
 <form id="ajaxForm" action="{{url('store')}}">
 {{ csrf_field() }}
@@ -44,7 +49,7 @@ select :
 <input type="submit" value="Submit" />
 </form>
 ```
-JavaScript
+* JavaScript
 ```javascript
 $('#ajaxForm').mslaf();
 ```
