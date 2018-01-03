@@ -1,5 +1,5 @@
 # Laravel Ajax forms
-Easy way to send traditional form inputs through Ajax and handling  alerts/messages which generated from laravel validator
+Easy way to send traditional form inputs through Ajax and handling  alerts/messages which generated from laravel validator (tested in laravel 5.4 & 5.5)
 ## Installing
 ```
 bower install  mahmoudsabry/mslaf
