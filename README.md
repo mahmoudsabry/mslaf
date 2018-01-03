@@ -6,8 +6,8 @@ bower install  mahmoudsabry/mslaf
 ```
 
 ## How to use
-* There are 2 ways to handle requests in laravel 
-    * Laravel controller
+1.There are 2 ways to handle requests in laravel 
+..* Laravel controller
 You need to use
 ```php
 use Validator;
@@ -28,12 +28,12 @@ controller method which handle requests
         }
  }
 ```
-    * Laravel form requests
-        * artisan command to create new request
-```bash
+..* Laravel form requests
+....* artisan command to create new request
+```
 php artisan make:request Testing
 ```
-        * open /app/Http/Requests/Testing
+....* open /app/Http/Requests/Testing
 ```php
  public function rules() {
         return [
@@ -51,7 +51,7 @@ php artisan make:request Testing
         ];
     }
 ```
-        * Controller Method
+....* Controller Method
 You need to use 
 ```php
 use App\Http\Requests\Testing;
