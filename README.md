@@ -6,7 +6,7 @@ bower install  mahmoudsabry/mslaf
 ```
 
 ## How to use
-* Laravel 
+* There are 2 ways to handle requests in laravel 
 
 1- Laravel controller
 
