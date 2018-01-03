@@ -52,6 +52,11 @@ php artisan make:request Testing
     }
 ```
 2-c Controller Method
+You need to use 
+```php
+use App\Http\Requests\Testing;
+```
+controller method which handle requests 
 ```php
     function store(Testing $request) {
 // all requests pass validation rules
