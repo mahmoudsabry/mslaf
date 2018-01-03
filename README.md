@@ -6,11 +6,58 @@ bower install  mahmoudsabry/mslaf
 ```
 
 ## How to use
-* Laravel controller or Form request return getMessages()
+* There are 2 ways to handle requests in laravel 
+1- Laravel controller
+You need to use
 ```php
-return $validator->errors()->getMessages();
+use Validator;
+use Symfony\Component\HttpFoundation\JsonResponse;
 ```
+controller method which handle requests 
+```php
+    function handle(Request $request) {
+        $validator = Validator::make($request->all(), [
+                    // roles
+                        ], [
+                    //messages
+        ]);
+        if ($validator->fails()) {
+             return new JsonResponse($validator->errors()->getMessages(), 422);
+        } else {
+            // all requests pass validation rules
+        }
+ }
+```
+2- Laravel form requests
+2-a artisan command to create new request
+```bash
+php artisan make:request Testing
+```
+2-b open /app/Http/Requests/Testing
+```php
+ public function rules() {
+        return [
+// your Roles
+        ];
+    }
 
+    protected function formatErrors(Validator $validator) {
+        return $validator->errors()->getMessages();
+    }
+
+    public function messages() {
+        return [
+//messages
+        ];
+    }
+```
+2-c Controller Method
+```php
+    function store(Testing $request) {
+// all requests pass validation rules
+        print_r($request->all());
+    }
+```
 * HTML form
 ``` html
 <form id="ajaxForm" action="{{url('store')}}">
